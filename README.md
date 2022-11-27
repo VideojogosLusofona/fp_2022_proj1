@@ -42,7 +42,7 @@ Cada vez que um jogador faz craft existe uma taxa de sucesso que consiste:
 Nesta fase a tarefa do jogador é definir os preços dos items de forma a maximizar o seu lucro. Quando este é estabelecido começa o processo de venda de produtos.
 
 #### Processo de Venda a Clientes
-O numero de clientes que entram na loja irá variar entre um intervalo pré-definido pelo aluno. Cada cliente irá escolher de forma aleatória um produto e decide se irá fazer a compra ou não de acordo com uma função quadratica (ver abaixo). 
+O numero de clientes que entram na loja irá variar entre um intervalo pré-definido pelo grupo. Cada cliente irá escolher de forma aleatória um produto e decide se irá fazer a compra ou não de acordo com uma função quadratica (ver abaixo). 
 
 ![Exemplo de um Função de Decisão de Compra (Quadrática).](/figures/DecisionGraph.png "A linha horizonal (verde) corresponde ao valor maximo que cada cliente está disposta a comprar o item, enquanto a linha curva (vermelha) corresponde ao valor que cada item corresponde. É importante realçar que esta curva pode dependendo do valor inerente de cada item.")
 
@@ -51,7 +51,7 @@ Se o valor do item ultrapassar o decision threshold estabelecido por cada client
 
 ### O Jogador
 
-O jogador tem varias attributos, e estes incluem:
+O jogador tem varios attributos, e estes incluem:
 
   - Dinheiro Corrente
   - Inventário de Recursos
@@ -61,7 +61,7 @@ O jogador tem varias attributos, e estes incluem:
 
 ### Iniciar o Jogo
 
-O início do jogo o jogador terá acesso a um X numero de receitas, Y numero de dinheiro e Z numero de recursos para começar o seu negócio. O valor de X e Y fica ao critério de cada grupo. 
+No início do jogo o jogador terá acesso a um X numero de receitas, Y numero de dinheiro e Z numero de recursos. O valor de X, Y e Z ficará ao critério de cada grupo.
 
 
 ## Objetivos e Critério de Avaliação
