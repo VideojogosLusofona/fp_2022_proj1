@@ -8,7 +8,7 @@ Todos os grupos devem implementar em Python um jogo chamado *Fantasy Battle Defe
 O jogo consiste em gerir uma loja onde o jogador tem que comprar recursos, criar items e vendê-los de forma a optimizar o seu lucro total, negociando as várias transações. O objectivo pedagógico deste jogo é para realçar a importância de Classes, Objectos, Herança e Funções. O qual deve ser necessário para uma implementação eficiente deste jogo. 
 
 ### Objectivo do Jogo
-O objectivo do jogo é atingir um lucro total de **100k$** ou um valor estabelecido pelos alunos (designers) sendo este um valor substancialmente suficiente considerando a economia estabelecida no jogo.
+O objectivo do jogo é atingir um lucro total de **100k$** ou um valor estabelecido pelo grupo sendo este um valor substancialmente suficiente considerando a economia estabelecida no jogo.
 
 ### Fluxo do Jogo
 Cada turno (ou dia) consite em 3 fases: Resource Buying; Crafting e Selling Items. Ao qual repete sucessivamente até atingir o objectivo estabelecido, ou até o jogador ficar sem dinheiro para continuar (ou seja ``` Total_Profit <= 0 ```).
@@ -44,15 +44,23 @@ Nesta fase a tarefa do jogador é definir os preços dos items de forma a maximi
 #### Processo de Venda a Clientes
 O numero de clientes que entram na loja irá variar entre um intervalo pré-definido pelo aluno. Cada cliente irá escolher de forma aleatória um produto e decide se irá fazer a compra ou não de acordo com uma função quadratica (ver abaixo). 
 
-![Exemplo de um Função de Decisão de Compra (Quadrática). A linha horizonal (verde) corresponde ao valor maximo que cada cliente está disposta a comprar o item, 
-enquanto a linha curva (vermelha) corresponde ao valor que cada item corresponde. É importante realçar que esta curva pode dependendo do valor inerente de cada item.](\figuras\DecisionGraph.png)
+![Exemplo de um Função de Decisão de Compra (Quadrática).](/figures/DecisionGraph.png "A linha horizonal (verde) corresponde ao valor maximo que cada cliente está disposta a comprar o item, enquanto a linha curva (vermelha) corresponde ao valor que cada item corresponde. É importante realçar que esta curva pode dependendo do valor inerente de cada item.")
 
 
-Se o valor do item ultrapassar o decision threshold estabelecido por cada cliente (este também aleatório mas dependendo do preço médio de cada item) o cliente irá rejeitar a compra, caso contrário faz a transacção com sucesso. 
+Se o valor do item ultrapassar o decision threshold estabelecido por cada cliente (este também aleatório mas dependendo do preço médio de cada item) o cliente irá rejeitar a compra, caso contrário faz a transacção com sucesso. É importante realçar que a curva da função quadrática poderá variar de item para item consoante variaveis determinadas pelo grupo. 
+
+### O Jogador
+
+O jogador tem varias attributos, e estes incluem:
+
+  - Dinheiro Corrente
+  - Inventário de Recursos
+  - Inventário de Items
 
 
+### Iniciar o Jogo
 
-
+O início do jogo o jogador terá acesso a um X numero de receitas, Y numero de dinheiro e Z numero de recursos para começar o seu negócio. O valor de X e Y fica ao critério de cada grupo. 
 
 
 ## Objetivos e Critério de Avaliação
@@ -79,30 +87,38 @@ Este projeto tem os seguintes objetivos:
     -   Referências, incluindo trocas de ideias com colegas, código aberto reutilizado (e.g., do StackOverflow) e bibliotecas de terceiros utilizadas. Devem ser o mais detalhados possível.
     -   **Nota:** o relatório deve ser simples e breve, com informação mínima e suficiente para que seja possível ter uma boa ideia do que foi feito. Atenção aos erros ortográficos e à correta formatação [Markdown](https://guides.github.com/features/mastering-markdown/), pois ambos serão tidos em conta na nota final.
 
-O projeto tem um peso de 10 valores na nota final da disciplina e será avaliado de forma qualitativa. Isto significa que todos os objetivos têm de ser parcialmente ou totalmente cumpridos. A cada objetivo, O1 a O5, será atribuída uma nota entre 0 e 1. A nota do projeto será dada pela seguinte fórmula:
+O projeto tem um peso de 5 valores na nota final da disciplina e será avaliado de forma qualitativa. Isto significa que todos os objetivos têm de ser parcialmente ou totalmente cumpridos. A cada objetivo, O1 a O5, será atribuída uma nota entre 0 e 1. A nota do projeto será dada pela seguinte fórmula:
 
-_N = 10 x O1 x O2 x O3 x O4 x O5 x D_
+_N = 10 x O1 x O2 x O3 x O4 x O5_
 
 Em que _D_ corresponde à nota da discussão e percentagem equitativa de realização do projeto, também entre 0 e 1. Isto significa que se os alunos ignorarem completamente um dos objetivos, não tenham feito nada no projeto ou não comparecerem na discussão, a nota final será zero.
 
 ### Requisito Mínimo do Projeto
 
-O requisito minimo do projeto é implementar o sistema de combate descrito (com interação e resposta do sistema) com as duas personagens do jogador (Warrior + Priest) e no minimo 4 inimigos (i.e. 4 x Orc Warrios). 
+O requisito minimo do projeto é implementar o sistema como descrito acima. Este deve incluir no minimo:
+
+  - Os 4 Recursos descritos (Wood, Iron, Leather and Gold)
+  - 4 Tipos de Itens destintos (Sword, Hammer, Armor e Bows) - No qual Armor tem 3 subtipos como Helm, Chest e Feet.
+  - 15 Receitas para Crafting de Itens
+  - O Processo de Compra e Venda
+  - O Main Loop do Jogo
+  - Interface em Linha de Comandos
 
 ### Pontuação Extra
 
-**Importante**: Façam o minimo requerido primeiro antes de tentarem fazer mais funcionalidades!!!
+**Importante**: Façam o minimo requerido primeiro antes de tentarem fazer mais funcionalidades!
 
 Os alunos que vão para além do expectavel irão receber valores extra e isto inclui:
- - Sensibilidade para a usabilidade entre Jogador e Jogo
- - Implementação de mais personagens
- - Implementação de mais variabilidade de inimigos
- - Implementação de Sistema de Magia para Inimigos
- - Implementação de mais Feitiços
- - Implementação de mais mecânicas de combate (e.g. Defend, Damage over Time, etc.).
+ - Interface em PyGame
+ - Sistema de "Barter" - O NPC pode negociar com com o Jogador (contraproposta)
+ - Inclusão de mais mecanicas como: 
+   * Mais Recursos 
+   * Sistema de Crafting mais refinado
+   * Mais Items
+ - Sistema de Audio
 
 ## Entrega
-O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:00** do dia **9 de Dezembro 2022**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
+O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:59** do dia **9 de Dezembro 2022**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
 
 -   Pasta escondida `.git` com o repositório Git local do projeto.
 -   Pasta do projeto, contendo os ficheiros todos deste.
@@ -125,7 +141,7 @@ _Texto adaptado da disciplina de [Algoritmos e Estruturas de Dados](https://feni
 Este enunciado é disponibilizado através da licença [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Metadados
--   Autores: [Phil Lopes](https://github.com/worshipcookies) e [Diogo Andrade]
+-   Autores: [Phil Lopes](https://github.com/worshipcookies) e [Diogo Andrade](https://github.com/DiogoDeAndrade)
 -   Curso: [Licenciatura em Videojogos](https://www.ulusofona.pt/licenciatura/videojogos)
 -   Instituição: [Universidade Lusófona de Humanidades e Tecnologias](https://www.ulusofona.pt/)
 
