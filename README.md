@@ -44,6 +44,8 @@ Nesta fase a tarefa do jogador é definir os preços dos items de forma a maximi
 #### Processo de Venda a Clientes
 O numero de clientes que entram na loja irá variar entre um intervalo pré-definido pelo aluno. Cada cliente irá escolher de forma aleatória um produto e decide se irá fazer a compra ou não de acordo com uma função quadratica (ver abaixo). 
 
+![Exemplo de um Função de Decisão de Compra (Quadrática). A linha horizonal (verde) corresponde ao valor maximo que cada cliente está disposta a comprar o item, 
+enquanto a linha curva (vermelha) corresponde ao valor que cada item corresponde. É importante realçar que esta curva pode dependendo do valor inerente de cada item.](\figuras\DecisionGraph.png)
 
 
 Se o valor do item ultrapassar o decision threshold estabelecido por cada cliente (este também aleatório mas dependendo do preço médio de cada item) o cliente irá rejeitar a compra, caso contrário faz a transacção com sucesso. 
