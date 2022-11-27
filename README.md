@@ -56,6 +56,7 @@ O jogador tem varias attributos, e estes incluem:
   - Dinheiro Corrente
   - Inventário de Recursos
   - Inventário de Items
+  - Barra de Experiência (Que aumenta com cada sucesso em crafting)
 
 
 ### Iniciar o Jogo
@@ -115,6 +116,7 @@ Os alunos que vão para além do expectavel irão receber valores extra e isto i
    * Mais Recursos 
    * Sistema de Crafting mais refinado
    * Mais Items
+   * Selling Experience (Permite ao jogador vender a valores mais altos do que o normal)
  - Sistema de Audio
 
 ## Entrega
