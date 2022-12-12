@@ -90,7 +90,7 @@ Este projeto tem os seguintes objetivos:
 
 O projeto tem um peso de 5 valores na nota final da disciplina e será avaliado de forma qualitativa. Isto significa que todos os objetivos têm de ser parcialmente ou totalmente cumpridos. A cada objetivo, O1 a O5, será atribuída uma nota entre 0 e 1. A nota do projeto será dada pela seguinte fórmula:
 
-_N = 10 x O1 x O2 x O3 x O4 x O5_
+_N = 5 x O1 x O2 x O3 x O4 x O5_
 
 Em que _D_ corresponde à nota da discussão e percentagem equitativa de realização do projeto, também entre 0 e 1. Isto significa que se os alunos ignorarem completamente um dos objetivos, não tenham feito nada no projeto ou não comparecerem na discussão, a nota final será zero.
 
